@@ -1,0 +1,25 @@
+.indicatorContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.textBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.indicatorName {
+    color: #7A8699;
+    font-size: 16px;
+    line-height: 19.2px;
+}
+
+.priceData {
+    color: #021E2F;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 42px;
+}

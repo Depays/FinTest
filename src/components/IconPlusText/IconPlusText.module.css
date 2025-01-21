@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.image {
+  border-radius: 50%;
+}
+
+.bgimage {
+  border-radius: 50%;
+  background-color: #eef0f4;
+  padding: 12px;
+}

@@ -1,0 +1,20 @@
+.dashboardPortfolioContainer {
+    width: 100%;
+    max-width: 455px;
+    max-height: 450px;
+    background-color: #FFFFFF;
+    border: 1.51px solid #E2E1DD;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.portfolioData {
+    border-top: 1px solid #E2E1DD;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    padding: 40px 0;
+}

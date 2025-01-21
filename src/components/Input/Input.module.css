@@ -1,0 +1,23 @@
+.formItem {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* max-width: 508px; */
+  gap: 10px;
+  min-width: 310px;
+}
+
+.formInput {
+  background: #eef0f4 !important;
+  border: 1px solid #e2e1dd;
+  border-radius: 16px;
+  height: 52px;
+  color: #7a8699;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.formInput {
+  text-indent: 25px;
+}

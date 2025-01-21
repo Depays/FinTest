@@ -1,0 +1,71 @@
+.container {
+  width: 100%;
+  max-width: 297px;
+}
+
+.sideBarContainer {
+  display: flex;
+  flex-direction: column;
+  /* width: 300px; */
+  height: 91vh;
+  background-color: #021e2f;
+  border-radius: 16px;
+  padding: 25px;
+  justify-content: space-between;
+}
+
+.sideBarData {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.point {
+  padding: 9px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.3s ease;
+  border-radius: 8px;
+  position: relative;
+}
+
+.leftData {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.pointText {
+  font-size: 18px;
+  line-height: 21.6px;
+  color: #d4d4d4;
+  transition: color 0.3s ease;
+}
+
+.active {
+  background-color: #f6ac12;
+  color: #021e2f;
+
+  .pointText {
+    color: #021e2f;
+  }
+}
+
+.active .pointIcon {
+  filter: invert(1);
+}
+
+.endPoint {
+  position: absolute;
+  left: 98%;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.point.active .endPoint {
+  opacity: 1;
+}

@@ -1,0 +1,17 @@
+.orangeBtn {
+  /* display: flex;
+  align-items: center;
+  text-align: center; */
+  background-color: #f6ac12;
+  border: 0px;
+  border-radius: 100px;
+  max-width: 534px;
+  max-height: 80px;
+  height: 80px;
+  width: 100%;
+
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 30.8px;
+  cursor: pointer;
+}

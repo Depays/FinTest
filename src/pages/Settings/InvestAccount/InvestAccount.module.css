@@ -1,0 +1,309 @@
+.container {
+  max-width: 1563px;
+  padding-top: 20px;
+}
+
+.section {
+  display: flex;
+  gap: 20px;
+}
+
+.infoWindow {
+  width: 100%;
+  max-width: 930px;
+}
+
+.info {
+  background-color: #fff;
+
+  border: 1px solid #e2e1dd;
+  border-radius: 12px;
+}
+
+.infoTitle {
+  color: #021e2f;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 36px;
+  border-bottom: 1px solid #e2e1dd;
+  padding: 25px;
+}
+
+.detailsList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 25px 25px 25px;
+}
+
+.detailsList {
+  list-style-type: none;
+}
+
+.detailsListItem {
+  border: 1px solid #e2e1dd;
+  border-radius: 16px;
+
+  padding: 25px;
+}
+
+.detailsMainAccount {
+  padding: 15px 25px 25px 25px;
+}
+
+.detailsMainAccountList {
+  color: #021e2f;
+  list-style-type: disc;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.greenInfo {
+  color: #50af95;
+  background-color: #d9ede8;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+/* Account Info */
+.accountInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 613px;
+  width: 100%;
+}
+
+.accountInfoWindow {
+  /* padding: 25px; */
+  background-color: #fff;
+  border: 1px solid #e2e1dd;
+  border-radius: 12px;
+}
+
+.mainAccountContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainAccountInfo {
+  border-bottom: 1px solid #e2e1dd;
+}
+
+.mainAccount {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 25px 20px 25px;
+}
+
+.mainAccountTitle {
+  display: flex;
+  flex-direction: column;
+}
+
+.mainAccountName {
+  padding-bottom: 8px;
+
+  color: #021e2f;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.mainAccountId {
+  color: #7a8699;
+}
+
+.mainAccountBalanceWindow {
+  display: flex;
+  padding: 20px 25px 25px 25px;
+  justify-content: space-between;
+}
+
+.mainAccountBalanceItem {
+  display: flex;
+  flex-direction: column;
+}
+
+.replenishedUsd {
+  color: #021e2f;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.replenishedUsdText {
+  color: #7a8699;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.2px;
+}
+
+.balanceText {
+  text-align: end;
+  color: #021e2f;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.2px;
+}
+
+.balanceNumber {
+  color: #021e2f;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19.2px;
+}
+
+/* Account statement */
+.accountStatement {
+  display: flex;
+  padding: 25px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  border-bottom: 1px solid #e2e1dd;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.reportContent {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 25px 25px 25px;
+  gap: 20px;
+}
+
+.report {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+.selectReportContainer {
+  display: flex;
+  align-items: center;
+  max-height: 44px;
+}
+
+.selectReport {
+  width: 100%;
+  height: 45.78px;
+  border: 1.51px solid #e2e1dd;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  appearance: none;
+  text-indent: 8px;
+  color: #021e2f;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.2px;
+}
+
+.selectReport:focus {
+  outline: none;
+}
+
+.datesContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dateReport {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 10px;
+}
+
+.dateFrom {
+  width: 100%;
+  border: 1px solid #e2e1dd;
+  border-radius: 8px;
+  height: 44px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.buttonText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.datePickerWithItem {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.datePicker {
+  border: 1px solid #e2e1dd;
+  border-radius: 0 8px 8px 0;
+  height: 44px;
+  width: 100%;
+  text-indent: 8px;
+  color: #7a8699;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.2px;
+  /* position: relative;
+  cursor: pointer;
+  box-sizing: border-box;
+  line-height: normal !important; */
+}
+
+.datePicker::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+/* .datePicker::-webkit-calendar-picker-indicator {
+  position: absolute;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+  cursor: pointer;
+} */
+
+.datePicker:focus {
+  outline: none;
+}
+
+.datePickerIcon {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e2e1dd;
+  border-radius: 8px 0 0 8px;
+  height: 44px;
+  max-width: 44px;
+  width: 100%;
+}
+
+.datePickerIcon img {
+  max-height: 24px;
+  max-width: 24px;
+  padding: 0 10px;
+}
+
+.titles {
+  color: #7a8699;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.2px;
+}

@@ -1,0 +1,30 @@
+/* Убираем стандартный маркер Chrome */
+details summary::-webkit-details-marker {
+  display: none;
+}
+/* Убираем стандартный маркер Firefox */
+details > summary {
+  list-style: none;
+  /* border: 1px solid yellowgreen; */
+}
+
+details summary:after {
+  content: url(../../assets/arrow-close.svg);
+  /* font-family: "Font Awesome 5 free"; */
+  /* margin-right: 7px; */
+}
+
+/* Добавляем собственный маркер для открытого состояния */
+details[open] summary:after {
+  content: url(../../assets/arrow-open.svg);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #021e2f;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21.6px;
+}

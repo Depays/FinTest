@@ -1,0 +1,27 @@
+.container {
+  max-width: 1920px;
+}
+
+.containerDashboardMain {
+  padding: 20px;
+}
+
+.generalBlocks {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.firstContentBlock {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.analyticsDataBlock {
+  width: 100%;
+  display: flex;
+  /* flex-direction: row; */
+  /* gap: 20px; */
+}

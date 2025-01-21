@@ -1,0 +1,24 @@
+.HeaderContainer {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    align-items: center;
+    border-radius: 16px;
+    padding: 0 25px;
+}
+
+.rightData {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+}
+
+.headerName { 
+    color: #021E2F;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 55.2px;
+}

@@ -1,0 +1,37 @@
+.container {
+  max-width: 1563px;
+  padding-top: 20px;
+}
+
+.itemContent {
+  width: 100%;
+  max-width: 1563px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  max-height: 114px;
+  background-color: #fff;
+  border: 1px solid #e2e1dd;
+  border-radius: 12px;
+  padding: 25px;
+}
+
+.funcButton {
+  border-radius: 100px;
+  padding: 20.5px 83px;
+  cursor: pointer;
+  border: none;
+  max-height: 54px;
+  max-width: 210px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

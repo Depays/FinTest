@@ -1,0 +1,13 @@
+.userContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.name {
+    color: #021E2F;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21.6px;
+}

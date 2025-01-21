@@ -1,0 +1,91 @@
+.container {
+  max-width: 1563px;
+  padding-top: 20px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  list-style-type: none;
+}
+
+.walletItem {
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #e2e1dd;
+  border-radius: 16px;
+}
+
+.detailItemTitle {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.detailItem {
+  padding: 25px;
+}
+
+.walletTitle {
+  display: flex;
+  flex-direction: column;
+}
+
+.walletTitleName {
+  padding-bottom: 10px;
+  color: #021e2f;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19.2px;
+}
+
+.walletTitleCurrency {
+  color: #7a8699;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.2px;
+}
+
+.notFilled {
+  padding: 10px 15px;
+  color: #ff4b55;
+  background-color: #ffdcdd;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  border-radius: 10px;
+}
+
+.detailsContent {
+  width: 100%;
+  padding-top: 20px;
+}
+
+.inputs {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+
+.funcButton {
+  border-radius: 100px;
+  padding: 20.5px 40px;
+  cursor: pointer;
+  border: none;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.6px;
+}
