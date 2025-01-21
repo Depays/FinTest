@@ -5313,12 +5313,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
 const initDigits = ["", "", "", "", "", ""];
 function EnterCodeForm() {
   const [digits, setDigits] = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(initDigits);
-  return /*#__PURE__*/React.createElement("form", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("form", {
     className: _EnterCodeForm_module_css__WEBPACK_IMPORTED_MODULE_2__.form
-  }, /*#__PURE__*/React.createElement(_EnterCodeInput_EnterCodeInput__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_EnterCodeInput_EnterCodeInput__WEBPACK_IMPORTED_MODULE_1__["default"], {
     digits: digits,
     changeHandler: setDigits
   }));
@@ -5342,6 +5343,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _EnterCodeInput_module_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./EnterCodeInput.module.css */ "./src/components/EnterCodeComponents/EnterCodeInput/EnterCodeInput.module.css");
+
 
 
 function EnterCodeInput(props) {
@@ -5391,9 +5393,9 @@ function EnterCodeInput(props) {
       inputRefs.current[index].blur();
     }
   };
-  return /*#__PURE__*/React.createElement("div", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
     className: _EnterCodeInput_module_css__WEBPACK_IMPORTED_MODULE_1__.codeForm
-  }, digits.map((digit, index) => /*#__PURE__*/React.createElement("input", {
+  }, digits.map((digit, index) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("input", {
     className: _EnterCodeInput_module_css__WEBPACK_IMPORTED_MODULE_1__.codeItem,
     key: index,
     value: digit,
@@ -5852,7 +5854,8 @@ function SideBar() {
     path: "/"
   }, {
     icon: _resources_icons__WEBPACK_IMPORTED_MODULE_2__["default"].iconPortfolio,
-    point: "Portfolio"
+    point: "Portfolio",
+    path: "/auth"
   }, {
     icon: _resources_icons__WEBPACK_IMPORTED_MODULE_2__["default"].iconAgentAccount,
     point: "Agent account"
@@ -6090,12 +6093,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Button_Button__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../components/Button/Button */ "./src/components/Button/Button.jsx");
 /* harmony import */ var _components_EnterCodeComponents_EnterCodeForm_EnterCodeForm__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../components/EnterCodeComponents/EnterCodeForm/EnterCodeForm */ "./src/components/EnterCodeComponents/EnterCodeForm/EnterCodeForm.jsx");
 /* harmony import */ var _EnterCodePage_module_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./EnterCodePage.module.css */ "./src/pages/Auth/EnterCodePage/EnterCodePage.module.css");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router/dist/development/chunk-K6AXKMTT.mjs");
 // import { useState } from "react";
 
 
 
 
+
 function EnterCodePage() {
+  const navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_4__.useNavigate)();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("section", {
     className: _EnterCodePage_module_css__WEBPACK_IMPORTED_MODULE_3__.loginWindow
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", {
@@ -6107,6 +6113,7 @@ function EnterCodePage() {
   }, "Enter code"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement("span", {
     className: _EnterCodePage_module_css__WEBPACK_IMPORTED_MODULE_3__.text
   }, "An email with a code has been sent to your email. Enter it to sign up to your account.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_EnterCodeComponents_EnterCodeForm_EnterCodeForm__WEBPACK_IMPORTED_MODULE_2__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Button_Button__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    onClick: () => navigate("/"),
     style: {
       boxShadow: "0 4px 12px #D28E0040",
       width: "100%"
@@ -6331,6 +6338,7 @@ const RegistrationPage = () => {
     email: "",
     password: ""
   });
+  const navigate = (0,react_router_dom__WEBPACK_IMPORTED_MODULE_5__.useNavigate)();
   const handleSignedStatus = () => {
     setSignedStatus(previousState => !previousState);
   };
@@ -6433,6 +6441,7 @@ const RegistrationPage = () => {
     className: _RegistrationPage_module_css__WEBPACK_IMPORTED_MODULE_3__.link,
     href: "#"
   }, "Risk warning")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_components_Button_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    onClick: () => navigate("/"),
     style: {
       boxShadow: "0 4px 12px #D28E0040",
       width: "100%"

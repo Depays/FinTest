@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import React from "react";
 import MySwitch from "../../../components/Switch/Switch";
@@ -17,6 +17,8 @@ const RegistrationPage = () => {
     email: "",
     password: "",
   });
+
+  const navigate = useNavigate();
 
   const handleSignedStatus = () => {
     setSignedStatus((previousState) => !previousState);
@@ -133,7 +135,10 @@ const RegistrationPage = () => {
             </span>
           </div>
         </div>
-        <Button style={{ boxShadow: "0 4px 12px #D28E0040", width: "100%" }}>
+        <Button
+          onClick={() => navigate("/")}
+          style={{ boxShadow: "0 4px 12px #D28E0040", width: "100%" }}
+        >
           Log in
         </Button>
         <span style={{ marginTop: "20px" }}>
