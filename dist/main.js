@@ -4760,7 +4760,7 @@ function App() {
     path: "/",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_dashboard_Dashboard__WEBPACK_IMPORTED_MODULE_13__["default"], null)
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_15__.Route, {
-    path: "auth/",
+    path: "/auth",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_pages_Auth_Auth__WEBPACK_IMPORTED_MODULE_1__["default"], null)
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default().createElement(react_router__WEBPACK_IMPORTED_MODULE_15__.Route, {
     index: true,
