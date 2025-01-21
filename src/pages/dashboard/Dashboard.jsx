@@ -6,6 +6,8 @@ import SideBar from '../../components/SideBar/SideBar';
 import OperationStatistic from './operationStatistic/OperationStatistic';
 import OperationStore from './operationStore/OperationStore';
 import DashboardPortfolio from './dashboardPortfolio/DashboardPortfolio';
+import TeamBalance from './teamBalance/TeamBalance';
+import CustomChart from '../../components/CustomChart/CustomChart';
 
 
 export default function Dashboard() {
@@ -18,7 +20,8 @@ export default function Dashboard() {
           <div className='analyticsDataBlock'>
             <div className="horizontalBlocks">
               <OperationStatistic />
-              <OperationStatistic />
+              <TeamBalance />
+              <CustomChart />
             </div>
             <div className='storesBlock'>
               <OperationStore />

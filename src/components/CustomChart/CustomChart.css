@@ -1,0 +1,81 @@
+.capitalGrowthContainer {
+    max-height: 472px;
+    max-width: 1088px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    border: 1px solid #EEF0F4;
+}
+
+.headerDataCapital {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btnPeriod p {
+    color: #7A8699;
+    font-size: 14px;
+    line-height: 16.8px;
+}
+
+.btnPeriod {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 10px 20px;
+    border-radius: 6px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btnPeriod.active {
+    background-color: #021E2F;
+}
+
+.btnPeriod .active-text {
+    color: #FFFFFF;
+}
+
+
+.chartWrapper {
+    width: 100%;
+    height: 350px;
+    max-height: 350px;
+}
+
+
+
+/* #custom-tooltip {
+    position: absolute;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    pointer-events: none;
+    z-index: 1000;
+  }
+  
+  #custom-tooltip .tooltip-change {
+    background-color: #4CAF50;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  #custom-tooltip .tooltip-change-negative {
+    background-color: #F44336; 
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+  } */
+  

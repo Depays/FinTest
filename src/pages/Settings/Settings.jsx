@@ -1,9 +1,9 @@
 import { Outlet } from "react-router-dom";
-
+import React from "react";
 import Header from "../../components/Header/Header";
 import SideBar from "../../components/SideBar/SideBar";
 
-import styles from "./Settings.module.css";
+import * as styles from "./Settings.module.css";
 
 const Settings = () => {
   return (

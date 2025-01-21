@@ -4,26 +4,30 @@ import SettingsNav from "../../../components/SettingsNav/SettingsNav";
 import DetailsComp from "../../../components/DetailsComp/DetailsComp";
 import IconPlusText from "../../../components/IconPlusText/IconPlusText";
 import Button from "../../../components/Button/Button";
+import DateCalendar from "../../../components/DateCalendar/DateCalendar";
 
-import styles from "./InvestAccount.module.css";
+import * as styles from "./InvestAccount.module.css";
+import "./InvestAccount.module.css";
 import icons from "../../../resources/icons";
 
 const InvestAccount = () => {
-  const [startDate, setStartDate] = useState(null); // Начальная дата
+  const detailsRef = useRef([]);
   const dateFromRef = useRef();
-  const selectRef = useRef();
 
-  const handleClickDateFrom = useCallback(() => {
-    console.log("its works");
-    dateFromRef.current.focus();
-    dateFromRef.current.showPicker();
-  }, []);
+  // const handleClickDateFrom = useCallback(() => {
+  //   console.log("its works");
+  //   dateFromRef.current.focus();
+  //   dateFromRef.current.showPicker();
+  // }, []);
+  const detailsNumber = [0, 1, 2, 3];
 
-  const handleClickSelect = useCallback(() => {
-    console.log("its works select");
-    dateFromRef.current.focus();
-    dateFromRef.current.showPicker();
-  }, []);
+  const handleOpenDetail = (value) => {
+    detailsNumber.filter((item) => {
+      if (item !== value) {
+        return detailsRef.current[item].removeAttribute("open");
+      }
+    });
+  };
 
   const User = {
     account_id: "RGL003614",
@@ -41,7 +45,11 @@ const InvestAccount = () => {
             <h3 className={styles.infoTitle}>Information</h3>
             <ul className={styles.detailsList}>
               <li className={styles.detailsListItem}>
-                <DetailsComp title="Main Account">
+                <DetailsComp
+                  ref={(el) => (detailsRef.current[0] = el)}
+                  onClick={() => handleOpenDetail(0)}
+                  title="Main Account"
+                >
                   <div className={styles.detailsMainAccount}>
                     <ul className={styles.detailsMainAccountList}>
                       <li>Minimum amount: 100 $</li>
@@ -65,7 +73,11 @@ const InvestAccount = () => {
                 </DetailsComp>
               </li>
               <li className={styles.detailsListItem}>
-                <DetailsComp title="Universal Account">
+                <DetailsComp
+                  ref={(el) => (detailsRef.current[1] = el)}
+                  onClick={() => handleOpenDetail(1)}
+                  title="Universal Account"
+                >
                   <div className={styles.detailsMainAccount}>
                     <ul className={styles.detailsMainAccountList}>
                       <li>Minimum amount: 100 $</li>
@@ -89,7 +101,11 @@ const InvestAccount = () => {
                 </DetailsComp>
               </li>
               <li className={styles.detailsListItem}>
-                <DetailsComp title={"What is success fee?"}>
+                <DetailsComp
+                  ref={(el) => (detailsRef.current[2] = el)}
+                  onClick={() => handleOpenDetail(2)}
+                  title={"What is success fee?"}
+                >
                   <div className={styles.detailsMainAccount}>
                     <ul className={styles.detailsMainAccountList}>
                       <li>Minimum amount: 100 $</li>
@@ -113,7 +129,11 @@ const InvestAccount = () => {
                 </DetailsComp>
               </li>
               <li className={styles.detailsListItem}>
-                <DetailsComp title={"How is success fee paid?"}>
+                <DetailsComp
+                  ref={(el) => (detailsRef.current[3] = el)}
+                  onClick={() => handleOpenDetail(3)}
+                  title={"How is success fee paid?"}
+                >
                   <div className={styles.detailsMainAccount}>
                     <ul className={styles.detailsMainAccountList}>
                       <li>Minimum amount: 100 $</li>
@@ -218,7 +238,8 @@ const InvestAccount = () => {
 
                   <div className={styles.datesContent}>
                     <span className={styles.titles}>Select interval</span>
-                    <div className={styles.dateReport}>
+                    <DateCalendar />
+                    {/* <div className={styles.dateReport}>
                       <p className={styles.datePickerWithItem}>
                         <label
                           onClick={() => handleClickDateFrom()}
@@ -250,7 +271,7 @@ const InvestAccount = () => {
                           placeholder="Date to"
                         />
                       </p>
-                    </div>
+                    </div> */}
                   </div>
                 </form>
               </div>

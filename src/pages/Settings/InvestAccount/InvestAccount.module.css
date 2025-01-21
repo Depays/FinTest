@@ -250,6 +250,10 @@
   width: 100%;
 }
 
+.datePickerWithItem div {
+  width: 100%;
+}
+
 .datePicker {
   border: 1px solid #e2e1dd;
   border-radius: 0 8px 8px 0;

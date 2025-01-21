@@ -1,0 +1,24 @@
+.inTeamContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.inTeamData {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.inTeamHeader {
+    color: #7A8699;
+    font-size: 16px;
+    line-height: 19.2px;
+}
+
+.inTeamPrice {
+    color: #021E2F;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 42px;
+}

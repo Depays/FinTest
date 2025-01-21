@@ -1,11 +1,11 @@
 // import { useState } from "react";
-
+import React from "react";
 import Button from "../../../components/Button/Button";
 import EnterCodeForm from "../../../components/EnterCodeComponents/EnterCodeForm/EnterCodeForm";
 
-import styles from "./EnterCodePage.module.css";
+import * as styles from "./EnterCodePage.module.css";
 
-const EnterCodePage = () => {
+export default function EnterCodePage() {
   return (
     <section className={styles.loginWindow}>
       <div className={styles.marginWindow}>
@@ -23,6 +23,4 @@ const EnterCodePage = () => {
       </div>
     </section>
   );
-};
-
-export default EnterCodePage;
+}

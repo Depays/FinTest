@@ -1,5 +1,5 @@
 import Switch from "react-switch";
-
+import React from "react";
 // import styles from "./Switch.module.css";
 
 const MySwitch = ({ onChange, children, ...props }) => {

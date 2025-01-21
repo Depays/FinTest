@@ -2,8 +2,9 @@ import Button from "../../../components/Button/Button";
 import SettingsNav from "../../../components/SettingsNav/SettingsNav";
 import IconPlusText from "../../../components/IconPlusText/IconPlusText";
 import Input from "../../../components/Input/Input";
-
-import styles from "./Profile.module.css";
+import React from "react";
+import * as styles from "./Profile.module.css";
+// import "./Profile.module.css";
 import icons from "../../../resources/icons";
 
 const Profile = () => {

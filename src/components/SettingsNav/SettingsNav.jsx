@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
-
-import styles from "./SettingsNav.module.css";
+import React from "react";
+import * as styles from "./SettingsNav.module.css";
 
 const SettingsNav = () => {
   const settingsLinks = [

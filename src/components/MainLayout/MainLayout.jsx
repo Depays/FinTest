@@ -1,12 +1,14 @@
 import { useState } from "react";
+import React from "react";
 import { Outlet, Link, NavLink } from "react-router-dom";
 
 import LangMenu from "../LangMenu/LangMenu";
 
 import icons from "../../resources/icons";
-import styles from "./MainLayout.module.css";
+import * as styles from "./MainLayout.module.css";
+import "./MainLayout.module.css";
 
-const MainLayout = () => {
+export default function MainLayout() {
   const [title, setTitle] = useState("");
   const navLinkStyle = {
     display: "flex",
@@ -46,7 +48,7 @@ const MainLayout = () => {
         </Link>
         <nav className={styles.navContent}>
           <NavLink to="/" style={navLinkStyle}>
-            <span className={styles.test}>Dashboard</span>
+            <span>Dashboard</span>
             <div style={lightStripeStyle}></div>
           </NavLink>
           <NavLink to="#" style={navLinkStyle}>
@@ -74,6 +76,4 @@ const MainLayout = () => {
       </div>
     </div>
   );
-};
-
-export default MainLayout;
+}

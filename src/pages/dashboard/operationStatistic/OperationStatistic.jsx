@@ -34,7 +34,7 @@ export default function OperationStatistic() {
             <div className='stats'>
                 <Indicator icon={icons.greenIndicator} name={'Replenished USD'} price={0} symbol={'%'} />
                 <Indicator icon={icons.redIndicator} name={'Withdrawn USD'} price={0} symbol={'$'} />
-                <Indicator icon={''} name={'Total fond deposit'} price={0} symbol={'$'} />
+                <Indicator icon={''} name={'Total fond deposit'} price={0} symbol={'$'} isRight={true} />
             </div>
             <div className='buttons'>
                 {buttons.map((button, index) => (

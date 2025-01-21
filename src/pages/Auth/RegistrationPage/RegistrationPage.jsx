@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-
+import React from "react";
 import MySwitch from "../../../components/Switch/Switch";
 import Button from "../../../components/Button/Button";
 
-import styles from "./RegistrationPage.module.css";
+import * as styles from "./RegistrationPage.module.css";
+import "./RegistrationPage.module.css";
 import icons from "../../../resources/icons";
 
 const RegistrationPage = () => {

@@ -1,13 +1,17 @@
-import styles from "./Input.module.css";
+import React from "react";
+import * as styles from "./Input.module.css";
+// import "./Input.module.css";
 
-const Input = ({ labelTitle = "", htmlFor = "", type, name, placeholder }) => {
+export default function Input({
+  labelTitle = "",
+  htmlFor = "",
+  type,
+  name,
+  placeholder,
+}) {
   return (
     <p className={styles.formItem}>
-      {labelTitle === "" ? null : (
-        <label className={styles.inputLabel} htmlFor={htmlFor}>
-          {labelTitle}
-        </label>
-      )}
+      {labelTitle === "" ? null : <label htmlFor={htmlFor}>{labelTitle}</label>}
 
       <input
         className={styles.formInput}
@@ -18,6 +22,6 @@ const Input = ({ labelTitle = "", htmlFor = "", type, name, placeholder }) => {
       />
     </p>
   );
-};
+}
 
-export default Input;
+// export default Input;

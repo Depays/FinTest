@@ -21,6 +21,11 @@
   gap: 10px;
 }
 
+
+.sideBarData a {
+  text-decoration: none;
+}
+
 .point {
   padding: 9px 15px;
   display: flex;

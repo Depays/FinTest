@@ -1,0 +1,82 @@
+.teamBalanceContainer {
+    max-height: 204px;
+    max-width: 1088px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    border: 1px solid #EEF0F4;
+}
+
+.headerIndicators {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.teamBalanceTextData {
+    width: 430px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.textData {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.textData {
+    color: #021E2F;
+    font-size: 16px;
+    line-height: 19.2px;
+}
+
+.textData.price {
+    font-weight: 600;
+}
+
+.teamBalanceBtnData {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.teamBalanceData {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn {
+    width: 200px;
+    border-radius: 100px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.btn.copyLink {
+    background-color: #F6AC12;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn.agentAccount {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: 1.51px solid #E2E1DD;
+}
+
+.dataTextTeam {
+    color: #021E2F;
+    font-size: 18px;
+    line-height: 21.6px;
+}

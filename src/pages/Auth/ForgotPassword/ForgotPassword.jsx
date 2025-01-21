@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
-
+import React from "react";
 import Button from "../../../components/Button/Button";
 
-import styles from "./ForgotPassword.module.css";
+import * as styles from "./ForgotPassword.module.css";
 
 const ForgotPassword = () => {
   return (

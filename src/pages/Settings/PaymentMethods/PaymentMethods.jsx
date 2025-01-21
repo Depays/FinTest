@@ -2,10 +2,10 @@ import SettingsNav from "../../../components/SettingsNav/SettingsNav";
 import DetailsComp from "../../../components/DetailsComp/DetailsComp";
 import IconPlusText from "../../../components/IconPlusText/IconPlusText";
 import Input from "../../../components/Input/Input";
-
-import styles from "./PaymentMethods.module.css";
+import React from "react";
+import * as styles from "./PaymentMethods.module.css";
 import icons from "../../../resources/icons";
-
+import "./PaymentMethods.module.css";
 const PaymentMethods = () => {
   const wallets = [
     {

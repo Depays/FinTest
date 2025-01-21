@@ -1,8 +1,8 @@
 import { useRef, useEffect } from "react";
 
-import styles from "./EnterCodeInput.module.css";
+import * as styles from "./EnterCodeInput.module.css";
 
-const EnterCodeInput = (props) => {
+export default function EnterCodeInput(props) {
   const { digits, changeHandler } = props;
   const length = digits.length;
   // здесь будут ссылки на input-элементы
@@ -63,6 +63,6 @@ const EnterCodeInput = (props) => {
       ))}
     </div>
   );
-};
+}
 
-export default EnterCodeInput;
+// export default EnterCodeInput;

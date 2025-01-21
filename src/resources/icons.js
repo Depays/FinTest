@@ -29,6 +29,9 @@ import twoFactorAuth from "../assets/two-factor-auth.svg";
 import generateReport from "../assets/generate-report.svg";
 import reportIcon from "../assets/report-icon.svg";
 import iconNotOperations from "../assets/not-operations.svg";
+import iconInTeam from "../assets/in-team-icon.svg";
+import iconCopyLink from "../assets/copy-link-icon.svg";
+import profileIcon from "../assets/profile-circle.svg";
 
 const icons = {
   loginLogo,
@@ -62,6 +65,9 @@ const icons = {
   generateReport,
   reportIcon,
   iconNotOperations,
+  iconInTeam,
+  iconCopyLink,
+  profileIcon,
 };
 
 export default icons;

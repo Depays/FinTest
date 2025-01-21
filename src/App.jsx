@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router";
-
+import React from "react";
 import Auth from "./pages/Auth/Auth";
 import LoginPage from "./pages/Auth/LoginPage/LoginPage";
 import RegistrationPage from "./pages/Auth/RegistrationPage/RegistrationPage";
@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<MainLayout />}></Route>
+        <Route path="/" element={<Dashboard />}></Route>
         <Route path="auth/" element={<Auth />}>
           <Route index element={<LoginPage />} />
           <Route path="forgot-password" element={<ForgotPassword />} />
@@ -37,7 +37,7 @@ function App() {
           <Route path="payment-methods" element={<PaymentMethods />} />
           <Route path="security" element={<Security />} />
         </Route>
-        <Route path="dashboard" element={<Dashboard />} />
+        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </>
   );

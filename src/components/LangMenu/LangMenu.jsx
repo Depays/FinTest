@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-
-import styles from "./LangMenu.module.css";
+import React from "react";
+import * as styles from "./LangMenu.module.css";
 import icons from "../../resources/icons";
 
 const LangMenu = ({ ...props }) => {

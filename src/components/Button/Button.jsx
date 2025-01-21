@@ -1,5 +1,5 @@
-import styles from "./Button.module.css";
-
+import * as styles from "./Button.module.css";
+import React from "react";
 const Button = ({ children, ...props }) => {
   return (
     <button className={styles.orangeBtn} {...props}>

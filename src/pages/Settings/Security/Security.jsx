@@ -1,10 +1,10 @@
 import { useState } from "react";
-
+import React from "react";
 import SettingsNav from "../../../components/SettingsNav/SettingsNav";
 import IconPlusText from "../../../components/IconPlusText/IconPlusText";
 import Button from "../../../components/Button/Button";
 
-import styles from "./Security.module.css";
+import * as styles from "./Security.module.css";
 import icons from "../../../resources/icons";
 
 const Security = () => {

@@ -1,8 +1,11 @@
+import React from "react";
+
 import SettingsNav from "../../../components/SettingsNav/SettingsNav";
 import IconPlusText from "../../../components/IconPlusText/IconPlusText";
 import Button from "../../../components/Button/Button";
 
-import styles from "./Agreements.module.css";
+import * as styles from "./Agreements.module.css";
+import "./Agreements.module.css";
 import icons from "../../../resources/icons";
 
 const Agreements = () => {
