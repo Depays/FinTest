@@ -1,5 +1,3 @@
-/* @import "node_modules/react-datepicker/src/stylesheets/datepicker.scss"; */
-
 .dateReport {
   display: flex;
 
@@ -27,6 +25,7 @@
   font-size: 16px;
   line-height: 19.2px;
   flex-grow: 1;
+  caret-color: transparent;
 }
 
 .datePicker::-webkit-calendar-picker-indicator {

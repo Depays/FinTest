@@ -1,6 +1,5 @@
 import React from "react";
-import * as styles from "./Input.module.css";
-// import "./Input.module.css";
+import styles from "./Input.module.css";
 
 export default function Input({
   labelTitle = "",
@@ -23,5 +22,3 @@ export default function Input({
     </p>
   );
 }
-
-// export default Input;

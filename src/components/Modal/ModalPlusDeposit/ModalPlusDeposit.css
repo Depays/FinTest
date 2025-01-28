@@ -1,0 +1,27 @@
+.headerDataModal {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #E2E1DD;
+}
+
+.ModalHeader {
+    color: #021E2F;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 52.8px;
+}
+
+.ModalDesc {
+    color: #021E2F;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.modalBodyCoins {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px
+}

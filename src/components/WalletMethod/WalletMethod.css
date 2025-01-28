@@ -1,0 +1,45 @@
+.walletMethodContainer {
+    background-color: transparent;
+    border-radius: 16px;
+    border: 1px solid #E2E1DD;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.approveMethod {
+    border-radius: 100px;
+    padding: 20px 40px;
+    background-color: transparent;
+    border: 1px solid #E2E1DD;
+    cursor: pointer;
+}
+
+.approveMethod p{
+    color: #021E2F;
+    font-size: 18px;
+    line-height: 21.6px;
+    text-align: center;
+}
+
+.approveMethod.active {
+    background-color: #F6AC12;
+}
+
+.amount {
+    width: 271px;
+    background-color: #EEF0F4;
+    border: 1px solid #E2E1DD;
+    border-radius: 16px;
+    padding: 15px 25px;
+}
+
+.amount::placeholder {
+    color: #7A8699;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.amount:focus {
+    outline: none;
+}

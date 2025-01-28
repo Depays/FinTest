@@ -1,0 +1,336 @@
+.pageContent {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  max-width: 1563px;
+}
+
+.refAndBonusesBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 455px;
+}
+
+/* Build a team refer link */
+.referLinkWindow {
+  max-width: 1088px;
+  max-height: 336px;
+  width: 100%;
+  background-color: #021e2f;
+  border: 1px solid #e2e1dd;
+  border-radius: 12px;
+}
+
+.referLinkContent {
+  color: #fff;
+}
+
+.refLinkTitle {
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21.6px;
+  padding: 25px 25px 20px 25px;
+}
+
+.referLinkContent details summary:after {
+  content: url(../../assets/agent-account-arrow.svg);
+  transform: rotate(180deg);
+  max-width: 24px;
+  max-height: 24px;
+}
+
+.referLinkContent details[open] summary:after {
+  content: url(../../assets/agent-account-arrow.svg);
+  transform: rotate(0deg);
+}
+
+.detailsMainAccount {
+  padding: 25px;
+  border-top: 1px solid #e2e1dd;
+  background-image: url(../../assets/agent-account-ref-bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position: 92% 45%;
+}
+
+.detailsContent {
+  max-width: 746px;
+}
+
+.detailsText {
+  padding-bottom: 25px;
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.refLink {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.refLinkDiv {
+  display: flex;
+  align-items: center;
+  background-color: #e2e1dd;
+  border-radius: 10px;
+  height: 52px;
+}
+
+.refLinkText {
+  padding: 0 10px;
+  color: #021e2f;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  color: #021e2f;
+  border: 0;
+  background-color: #f6ac12;
+  border-radius: 100px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21.6px;
+  height: 54px;
+  cursor: pointer;
+}
+
+/* Bonuses */
+.bonusesWindows {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 455px;
+}
+
+.bonusesWindow {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #e2e1dd;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.bonusesWindowContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 25px;
+}
+
+.bonusesWindowText {
+  display: flex;
+  flex-direction: column;
+}
+
+.bonusesWindowTextUpper {
+  color: #7a8699;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.2px;
+}
+
+.bonusesWindowTextLow {
+  color: #021e2f;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 42px;
+}
+
+/* statusBlockPlusAgentNumber window */
+
+.statusBlockPlusAgentNumber {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Status Windows */
+.statusWindows {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 1088px;
+  width: 100%;
+}
+
+.statusWindow {
+  background-color: #fff;
+  border: 1px solid #e2e1dd;
+  border-radius: 12px;
+  max-width: 1088px;
+  width: 100%;
+}
+
+.statusTitle {
+  border-bottom: 1px solid #e2e1dd;
+  padding: 25px;
+}
+
+.statusTitleText {
+  color: #021e2f;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21.6px;
+}
+
+.statusWindowContent {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.requireAndCompany {
+  display: flex;
+  /* flex-wrap: wrap; */
+  width: 100%;
+}
+
+.listValues {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 509px;
+}
+
+.listTitle {
+  color: #021e2f;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.listItem {
+  padding-left: 25px;
+}
+
+.listItem li {
+  color: #021e2f;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.statusAgentItems {
+  display: flex;
+  width: 100%;
+  /* flex-direction: row; */
+}
+
+.infoText {
+  display: flex;
+  align-items: center;
+  max-height: 64px;
+  max-width: 509px;
+  width: 100%;
+}
+
+.greenInfo {
+  color: #50af95;
+  background-color: #d9ede8;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  width: 100%;
+}
+
+.redInfo {
+  color: #ff4b55;
+  background-color: #ffdcdd;
+  border-radius: 10px;
+  padding: 10px 15px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  width: 100%;
+}
+
+/* Agent number  */
+
+.agentNumberWindow {
+  background-color: #fff;
+  max-width: 455px;
+  width: 100%;
+  border: 1px solid #eef0f4;
+  border-radius: 12px;
+  max-height: 487px;
+}
+
+.agentNumberTitle {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 20px 25px 25px;
+  border-bottom: 1px solid #e2e1dd;
+}
+
+.agentNumberTitleText {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.agentNumberTitleBtn {
+  cursor: pointer;
+  background-color: #f6ac12;
+  border-radius: 50%;
+  border: 0;
+  width: 30px;
+  height: 30px;
+}
+
+.peopleCount {
+  color: #021e2f;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19.2px;
+}
+
+.peopleList {
+  display: flex;
+  flex-direction: column;
+}
+
+.peopleListItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  list-style: none;
+  padding: 15px 25px;
+}
+
+.peopleListItem:not(:last-child) {
+  border-bottom: 1px solid #e2e1dd;
+}
+
+.peopleListItemTitle {
+  color: #021e2f;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.2px;
+}
+
+.peopleListItemContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  color: #7a8699;
+}

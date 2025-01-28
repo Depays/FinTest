@@ -1,13 +1,12 @@
 // import { useState } from "react";
 import React from "react";
+
 import Button from "../../../components/Button/Button";
 import EnterCodeForm from "../../../components/EnterCodeComponents/EnterCodeForm/EnterCodeForm";
 
-import * as styles from "./EnterCodePage.module.css";
-import { useNavigate } from "react-router-dom";
+import styles from "./EnterCodePage.module.css";
 
 export default function EnterCodePage() {
-  const navigate = useNavigate();
   return (
     <section className={styles.loginWindow}>
       <div className={styles.marginWindow}>
@@ -19,10 +18,7 @@ export default function EnterCodePage() {
           </span>
         </div>
         <EnterCodeForm />
-        <Button
-          onClick={() => navigate("/")}
-          style={{ boxShadow: "0 4px 12px #D28E0040", width: "100%" }}
-        >
+        <Button style={{ boxShadow: "0 4px 12px #D28E0040", width: "100%" }}>
           Sign up
         </Button>
       </div>

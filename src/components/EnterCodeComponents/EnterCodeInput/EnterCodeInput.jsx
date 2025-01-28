@@ -1,6 +1,6 @@
-import { useRef, useEffect } from "react";
-import React from "react";
-import * as styles from "./EnterCodeInput.module.css";
+import React, { useRef, useEffect } from "react";
+
+import styles from "./EnterCodeInput.module.css";
 
 export default function EnterCodeInput(props) {
   const { digits, changeHandler } = props;
@@ -64,5 +64,3 @@ export default function EnterCodeInput(props) {
     </div>
   );
 }
-
-// export default EnterCodeInput;

@@ -1,10 +1,11 @@
+import React from "react";
+
 import Button from "../../../components/Button/Button";
 import SettingsNav from "../../../components/SettingsNav/SettingsNav";
 import IconPlusText from "../../../components/IconPlusText/IconPlusText";
 import Input from "../../../components/Input/Input";
-import React from "react";
-import * as styles from "./Profile.module.css";
-// import "./Profile.module.css";
+
+import styles from "./Profile.module.css";
 import icons from "../../../resources/icons";
 
 const Profile = () => {
@@ -94,7 +95,15 @@ const Profile = () => {
           <div className={styles.operatorWindow}>
             <div className={styles.operatorInfo}>
               <div className={styles.operatorAvatar}>
-                <IconPlusText icon={Operator.avatar} alt="OperatorAvatar">
+                <IconPlusText
+                  bgcolor={true}
+                  icon={
+                    Operator.avatar === ""
+                      ? icons.noImgOperator
+                      : Operator.avatar
+                  }
+                  alt="OperatorAvatar"
+                >
                   <div className={styles.operatorName}>
                     <span className={styles.operatorNameStyle}>
                       {Operator.name}

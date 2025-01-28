@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import React from "react";
-import * as styles from "./LangMenu.module.css";
+
+import styles from "./LangMenu.module.css";
 import icons from "../../resources/icons";
 
 const LangMenu = ({ ...props }) => {
@@ -51,18 +51,21 @@ const LangMenu = ({ ...props }) => {
           <img src={languages[langIndex].icon} alt="" />
         </div>
         {open ? (
-          <ul className={styles.menu}>
-            {languages.map((lang, index) => (
-              <li
-                className={styles.langItem}
-                onClick={() => handleChooseLang(index)}
-                key={index}
-              >
-                <span>{lang.title}</span>
-                <img src={lang.icon} alt="" />
-              </li>
-            ))}
-          </ul>
+          <div>
+            <ul className={styles.menu}>
+              {/* <div className="triangel"></div> */}
+              {languages.map((lang, index) => (
+                <li
+                  className={styles.langItem}
+                  onClick={() => handleChooseLang(index)}
+                  key={index}
+                >
+                  <span>{lang.title}</span>
+                  <img src={lang.icon} alt="" />
+                </li>
+              ))}
+            </ul>
+          </div>
         ) : null}
       </div>
     </div>

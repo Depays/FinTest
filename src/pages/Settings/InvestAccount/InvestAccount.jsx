@@ -1,4 +1,4 @@
-import React, { useCallback, useRef, useState } from "react";
+import React, { useRef } from "react";
 
 import SettingsNav from "../../../components/SettingsNav/SettingsNav";
 import DetailsComp from "../../../components/DetailsComp/DetailsComp";
@@ -6,19 +6,13 @@ import IconPlusText from "../../../components/IconPlusText/IconPlusText";
 import Button from "../../../components/Button/Button";
 import DateCalendar from "../../../components/DateCalendar/DateCalendar";
 
-import * as styles from "./InvestAccount.module.css";
+import styles from "./InvestAccount.module.css";
 import "./InvestAccount.module.css";
 import icons from "../../../resources/icons";
 
 const InvestAccount = () => {
   const detailsRef = useRef([]);
-  const dateFromRef = useRef();
 
-  // const handleClickDateFrom = useCallback(() => {
-  //   console.log("its works");
-  //   dateFromRef.current.focus();
-  //   dateFromRef.current.showPicker();
-  // }, []);
   const detailsNumber = [0, 1, 2, 3];
 
   const handleOpenDetail = (value) => {
@@ -239,39 +233,6 @@ const InvestAccount = () => {
                   <div className={styles.datesContent}>
                     <span className={styles.titles}>Select interval</span>
                     <DateCalendar />
-                    {/* <div className={styles.dateReport}>
-                      <p className={styles.datePickerWithItem}>
-                        <label
-                          onClick={() => handleClickDateFrom()}
-                          className={styles.datePickerIcon}
-                          htmlFor="datefrom"
-                        >
-                          <img src={icons.calendar} alt="" />
-                        </label>
-                        <input
-                          ref={dateFromRef}
-                          className={styles.datePicker}
-                          name="datefrom"
-                          id="datefrom"
-                          type="text"
-                          onFocus={() => (dateFromRef.current.type = "date")}
-                          onBlur={() => (dateFromRef.current.type = "text")}
-                          placeholder="Date from"
-                        />
-                      </p>
-                      <p className={styles.datePickerWithItem}>
-                        <input
-                          style={{ borderRadius: "8px" }}
-                          className={styles.datePicker}
-                          name="dateto"
-                          id="dateto"
-                          type="text"
-                          onFocus={() => (dateFromRef.current.type = "date")}
-                          onBlur={() => (dateFromRef.current.type = "text")}
-                          placeholder="Date to"
-                        />
-                      </p>
-                    </div> */}
                   </div>
                 </form>
               </div>

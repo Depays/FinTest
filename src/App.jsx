@@ -6,8 +6,6 @@ import RegistrationPage from "./pages/Auth/RegistrationPage/RegistrationPage";
 import EnterCodePage from "./pages/Auth/EnterCodePage/EnterCodePage";
 import ForgotPassword from "./pages/Auth/ForgotPassword/ForgotPassword";
 
-import MainLayout from "./components/MainLayout/MainLayout";
-
 import Settings from "./pages/Settings/Settings";
 import Profile from "./pages/Settings/Profile/Profile";
 import InvestAccount from "./pages/Settings/InvestAccount/InvestAccount";
@@ -16,6 +14,8 @@ import PaymentMethods from "./pages/Settings/PaymentMethods/PaymentMethods";
 import Security from "./pages/Settings/Security/Security";
 
 import Dashboard from "./pages/dashboard/Dashboard";
+
+import AgentAccount from "./pages/AgentAccount/AgentAccount";
 
 import "./App.css";
 
@@ -38,6 +38,7 @@ function App() {
           <Route path="security" element={<Security />} />
         </Route>
         <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/agent-account" element={<AgentAccount />} />
       </Routes>
     </>
   );

@@ -32,6 +32,20 @@ import iconNotOperations from "../assets/not-operations.svg";
 import iconInTeam from "../assets/in-team-icon.svg";
 import iconCopyLink from "../assets/copy-link-icon.svg";
 import profileIcon from "../assets/profile-circle.svg";
+import arrowLeft from "../assets/arrow-left.svg";
+import arrowRight from "../assets/arrow-right.svg";
+import closeBtnCalendar from "../assets/close-btn-calendar.svg";
+import btnCopy from "../assets/btn-copy.svg";
+import ModalClose from "../assets/modal-close-square.svg";
+import iconUsdt from "../assets/usdt-coin-icon.svg";
+import iconUsdc from "../assets/usdc-coin-icon.svg";
+import iconQR from "../assets/qr.svg";
+import iconIB from "../assets/ib-statement-icon.svg";
+import iconBinane from "../assets/binance-statement-icon.svg";
+import ArrowPaginator from "../assets/arrow-paginator.svg";
+import whitePlus from "../assets/white-plus.svg";
+import noImgOperator from "../assets/no-img-operator.svg";
+import agentAccountPeople from "../assets/agent-account-people.svg";
 
 const icons = {
   loginLogo,
@@ -68,6 +82,20 @@ const icons = {
   iconInTeam,
   iconCopyLink,
   profileIcon,
+  arrowLeft,
+  arrowRight,
+  closeBtnCalendar,
+  btnCopy,
+  ModalClose,
+  iconUsdt,
+  iconUsdc,
+  iconQR,
+  iconIB,
+  iconBinane,
+  ArrowPaginator,
+  whitePlus,
+  noImgOperator,
+  agentAccountPeople,
 };
 
 export default icons;

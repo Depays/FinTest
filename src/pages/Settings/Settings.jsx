@@ -1,11 +1,12 @@
-import { Outlet } from "react-router-dom";
 import React from "react";
+import { Outlet } from "react-router-dom";
+
 import Header from "../../components/Header/Header";
 import SideBar from "../../components/SideBar/SideBar";
 
-import * as styles from "./Settings.module.css";
+import styles from "./Settings.module.css";
 
-const Settings = () => {
+export default function Settings() {
   return (
     <div className={styles.container}>
       <div className={styles.containerDashboardMain}>
@@ -21,6 +22,4 @@ const Settings = () => {
       </div>
     </div>
   );
-};
-
-export default Settings;
+}

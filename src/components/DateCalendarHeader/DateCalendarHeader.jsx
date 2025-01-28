@@ -1,53 +1,46 @@
-import { useRef, useState } from "react";
+// import { useEffect, useState } from "react";
 import React from "react";
 import "react-datepicker/dist/react-datepicker.css";
 
-import { getMonth, getYear } from "date-fns";
-import range from "lodash/range";
+// import { getMonth, getYear } from "date-fns";
+// import range from "lodash/range";
 
-import * as styles from "./DateCalendarHeader.module.css";
-import "./DateCalendarHeader.module.css";
+import styles from "./DateCalendarHeader.module.css";
+import icons from "../../resources/icons";
 
 const DateCalendarHeader = ({
   date,
-  changeYear,
-  changeMonth,
   monthDate,
-  customHeaderCount,
   decreaseMonth,
   increaseMonth,
-
-  prevMonthButtonDisabled,
-  nextMonthButtonDisabled,
+  handleClickDateFrom,
+  current_ref,
 }) => {
-  const [startDate, setStartDate] = useState(new Date());
-  const years = range(1990, getYear(new Date()) + 1, 1);
-
-  const buttonsRef = useRef([]);
-
   return (
     <div className={styles.calendarHeader}>
       <div className={styles.upperHeader}>
-        <button type="button"></button>
-        <span>Select date</span>
+        <div className={styles.closeBtnDiv}>
+          <button
+            onClick={() => handleClickDateFrom(current_ref, false)}
+            className={styles.closeBtn}
+            type="button"
+          >
+            <img src={icons.closeBtnCalendar} alt="CloseButton" />
+          </button>
+        </div>
+        <div className={styles.headerTitleDiv}>
+          <span className={styles.headerTitle}>Select date</span>
+        </div>
       </div>
       <div className={styles.ButtonsPlusDate}>
         <button
+          style={{ paddingRight: "2px" }}
+          className={styles.buttons}
           type="button"
-          //   style={{ position: "none" }}
           aria-label="Previous Month"
-          //   className={
-          //     "react-datepicker__navigation react-datepicker__navigation--previous"
-          //   }
           onClick={decreaseMonth}
         >
-          <span
-          // className={
-          //   "react-datepicker__navigation-icon react-datepicker__navigation-icon--previous"
-          // }
-          >
-            {"<"}
-          </span>
+          <img src={icons.arrowLeft} alt="" />
         </button>
         <span className="react-datepicker__current-month">
           {monthDate.toLocaleString("en-US", {
@@ -56,21 +49,13 @@ const DateCalendarHeader = ({
           })}
         </span>
         <button
+          style={{ paddingLeft: "2px" }}
+          className={styles.buttons}
           type="button"
-          //   style={{ position: "none" }}
           aria-label="Next Month"
-          //   className={
-          //     "react-datepicker__navigation react-datepicker__navigation--next"
-          //   }
           onClick={increaseMonth}
         >
-          <span
-          // className={
-          //   "react-datepicker__navigation-icon react-datepicker__navigation-icon--next"
-          // }
-          >
-            {">"}
-          </span>
+          <img src={icons.arrowRight} alt="" />
         </button>
       </div>
     </div>

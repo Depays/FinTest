@@ -1,6 +1,6 @@
-import * as styles from "./DetailsComp.module.css";
-import "./DetailsComp.module.css";
 import React from "react";
+
+import styles from "./DetailsComp.module.css";
 
 const DetailsComp = ({ ref, onClick, title, children, ...props }) => {
   return (

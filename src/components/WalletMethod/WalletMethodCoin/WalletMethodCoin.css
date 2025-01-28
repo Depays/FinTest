@@ -1,0 +1,61 @@
+.walletMethodCoinContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+}
+
+.coinData {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.coinDataHeader {
+    color: #021E2F;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19.2px;
+}
+
+.checkBoxNetworksData {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+
+.NetworkData {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type='checkbox'] {
+    display: none;
+}
+
+input[type='checkbox'] + label {
+    margin-top: 4px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #E2E1DD;
+    border-radius: 4px;
+    position: relative;
+    cursor: pointer;
+}
+
+input[type='checkbox']:checked + label {
+    background-color: #F6AC12;
+}
+
+svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}

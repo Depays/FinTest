@@ -23,6 +23,7 @@ export default function SideBar() {
     {
       icon: icons.iconAgentAccount,
       point: "Agent account",
+      path: "/agent-account",
     },
     {
       icon: icons.iconSettings,

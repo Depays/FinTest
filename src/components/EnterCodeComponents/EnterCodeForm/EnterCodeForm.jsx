@@ -1,8 +1,8 @@
-import { useState } from "react";
-import React from "react";
+import React, { useState } from "react";
+
 import EnterCodeInput from "../EnterCodeInput/EnterCodeInput";
 
-import * as styles from "./EnterCodeForm.module.css";
+import styles from "./EnterCodeForm.module.css";
 
 const initDigits = ["", "", "", "", "", ""];
 
@@ -15,5 +15,3 @@ export default function EnterCodeForm() {
     </form>
   );
 }
-
-// export default EnterCodeForm;

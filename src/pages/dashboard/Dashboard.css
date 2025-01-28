@@ -24,7 +24,7 @@
     /* justify-content: space-between; */
 }
 
-.storesBlock { 
+.storesBlock {
     width: 100%;
     max-width: 455px;
     display: flex;
@@ -37,4 +37,97 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.operationsPage {
+    width: 100%;
+    height: 80.5vh;
+    background-color: #FFFFFF;
+    border: 1px solid #E2E1DD;
+    border-radius: 12px;
+    padding: 25px;
+    position: relative;
+}
+
+.columnOperationsBox {
+    background-color: #EEF0F4;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+}
+
+.columnText {
+    color: #7A8699;
+    font-size: 16px;
+    line-height: 19.2px;
+}
+
+.rightColumnsData {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+.columnText.right {
+    padding: 0 25px;
+}
+
+.paginator {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    top: 100;
+    left: 25px;
+    right: 25px;
+    bottom: 25px;
+}
+
+.goPagination {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3px;
+}
+
+.arrowPagesPagin {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.goPagination img {
+    width: 9px;
+    height: 9px;
+}
+
+.pageButtonPagination {
+    background-color: transparent;
+    border: none;
+    color: #7A8699;
+    font-size: 16px;
+    line-height: 19.2px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.nextPagePagin {
+    transform: rotate(180deg);
+}
+
+.pageButtonPagination.active {
+    color: #D28E00;
+}
+
+.paginatorText {
+    color: #7A8699;
+    font-size: 16px;
+    line-height: 19.2px;
+}
+
+.paginatorText.arrows {
+    padding: 0 10px;
 }
