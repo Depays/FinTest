@@ -20,7 +20,7 @@ import AgentAccount from "./pages/AgentAccount/AgentAccount";
 
 import "./App.css";
 
-import "react-refresh/runtime";
+// import "react-refresh/runtime";
 
 function App() {
   return (
