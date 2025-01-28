@@ -12,12 +12,15 @@ import InvestAccount from "./pages/Settings/InvestAccount/InvestAccount";
 import Agreements from "./pages/Settings/Agreements/Agreements";
 import PaymentMethods from "./pages/Settings/PaymentMethods/PaymentMethods";
 import Security from "./pages/Settings/Security/Security";
+import Portfolio from "./pages/Portfolio/Portfolio";
 
 import Dashboard from "./pages/dashboard/Dashboard";
 
 import AgentAccount from "./pages/AgentAccount/AgentAccount";
 
 import "./App.css";
+
+import "react-refresh/runtime";
 
 function App() {
   return (
@@ -39,6 +42,7 @@ function App() {
         </Route>
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/agent-account" element={<AgentAccount />} />
+        <Route path="/portfolio" element={<Portfolio />} />
       </Routes>
     </>
   );

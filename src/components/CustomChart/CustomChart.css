@@ -79,3 +79,36 @@
     color: white;
   } */
   
+
+  .chartjs-tooltip {
+    padding: 10px;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    border: 1px solid #E2E1DD;  /* Теперь бордер точно применяется */
+    color: #7A8699;
+    font-size: 12px;
+    line-height: 14.4px;
+    text-align: left;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .1s ease;
+    position: absolute;
+    z-index: 100;
+  }
+  
+  .chartjs-tooltip th {
+    font-weight: bold;  /* Здесь меняем толщину текста заголовка */
+    font-size: 14px;  /* Вы можете также изменить размер шрифта */
+  }
+  
+  .chartjs-tooltip td {
+    padding: 5px 10px;
+  }
+  
+  .chartjs-tooltip tfoot td {
+    background-color: #50AF95;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+  }
+  

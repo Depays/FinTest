@@ -46,6 +46,16 @@ import ArrowPaginator from "../assets/arrow-paginator.svg";
 import whitePlus from "../assets/white-plus.svg";
 import noImgOperator from "../assets/no-img-operator.svg";
 import agentAccountPeople from "../assets/agent-account-people.svg";
+import iconPortfolioStat1 from "../assets/portfolio-stats1-icon.svg";
+import iconPortfolioStat2 from "../assets/portfolio-stats2-icon.svg";
+import iconPortfolioStat3 from "../assets/portfolio-stats3-icon.svg";
+import iconSearch from "../assets/search-normal-icon.svg";
+import iconFilters from "../assets/filters-icon.svg";
+import iconFilterEdit from "../assets/filter-edit-icon.svg";
+import iconReload from "../assets/table-reload-icon.svg";
+import iconTestTicker from "../assets/stepn-test-icon.svg";
+import iconCoin from "../assets/coin-icon.svg";
+import iconTestPortfolioOperations from "../assets/test-portfolio-operation-icon.svg";
 
 const icons = {
   loginLogo,
@@ -96,6 +106,16 @@ const icons = {
   whitePlus,
   noImgOperator,
   agentAccountPeople,
+  iconPortfolioStat1,
+  iconPortfolioStat2,
+  iconPortfolioStat3,
+  iconSearch,
+  iconFilters,
+  iconFilterEdit,
+  iconReload,
+  iconTestTicker,
+  iconCoin,
+  iconTestPortfolioOperations,
 };
 
 export default icons;

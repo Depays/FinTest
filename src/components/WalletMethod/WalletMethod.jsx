@@ -16,10 +16,13 @@ export default function WalletMethod({ coin, onContentChange, withdraw, fondStat
 
     return (
         <div className='walletMethodContainer'>
-            <WalletMethodCoin coin={coin} onNetworkSelectionChange={handleNetworkSelectionChange} fondStatement={fondStatement} />
-            {isNetworkSelected && withdraw && !fondStatement && (
-                <input type="text" className="amount" placeholder='Amount, $' />
-            )}
+            <div className='leftWalletDataContainer'>
+                <WalletMethodCoin coin={coin} onNetworkSelectionChange={handleNetworkSelectionChange} fondStatement={fondStatement} />
+                {isNetworkSelected && withdraw && !fondStatement && (
+                    <input type="text" className="amount" placeholder='Amount, $' />
+                )}
+            </div>
+
             <button
                 className={`approveMethod ${isNetworkSelected || fondStatement ? 'active' : ''}`}
                 onClick={handleGenerateWallet}

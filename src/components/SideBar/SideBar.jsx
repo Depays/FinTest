@@ -18,7 +18,7 @@ export default function SideBar() {
     {
       icon: icons.iconPortfolio,
       point: "Portfolio",
-      path: "/auth",
+      path: "/portfolio",
     },
     {
       icon: icons.iconAgentAccount,

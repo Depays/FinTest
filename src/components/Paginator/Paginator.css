@@ -1,0 +1,56 @@
+.paginator {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: absolute;
+    top: 100;
+    left: 25px;
+    right: 25px;
+    bottom: 25px;
+}
+
+.goPagination {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3px;
+}
+
+.arrowPagesPagin {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.goPagination img {
+    width: 9px;
+    height: 9px;
+}
+
+.pageButtonPagination {
+    background-color: transparent;
+    border: none;
+    color: #7A8699;
+    font-size: 16px;
+    line-height: 19.2px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.nextPagePagin {
+    transform: rotate(180deg);
+}
+
+.pageButtonPagination.active {
+    color: #D28E00;
+}
+
+.paginatorText {
+    color: #7A8699;
+    font-size: 16px;
+    line-height: 19.2px;
+}
+
+.paginatorText.arrows {
+    padding: 0 10px;
+}

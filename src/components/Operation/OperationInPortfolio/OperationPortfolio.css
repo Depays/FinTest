@@ -1,0 +1,44 @@
+.operationPortfolioContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 25px;
+}
+
+.operPortIconBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+}
+
+.operPortIconBox p.name {
+    color: #021E2F;
+    font-size: 16px;
+    line-height: 19.2px;
+    font-weight: 600;
+}
+
+.operPortIconBox p.type {
+    background-color: #D28E00;
+    border-radius: 50px;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 0 5px;
+}
+
+.rightContainerPortOper {
+    display: flex;
+    flex-direction: row;
+    gap: 36px;
+    align-items: center;
+}
+
+.rightContainerPortOper p.increase {
+   color: #50AF95;
+   font-size: 14px;
+   line-height: 22px;
+}

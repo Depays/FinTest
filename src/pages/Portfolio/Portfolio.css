@@ -1,0 +1,224 @@
+.portfolioContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+}
+
+.portfolioContainerData {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.portfolioStats {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.portfolioSearchFiltersBlock {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.portfolioSearchInputBox {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #E2E1DD;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.portfolioSearchInputBox input {
+    width: 100%;
+    border: none;
+}
+
+.portfolioSearchInputBox input::placeholder {
+    color: #D4D4D4;
+    font-size: 18px;
+    line-height: 21.6px;
+}
+
+.portfolioSearchInputBox input:focus {
+    outline: none;
+}
+
+.portfolioSearchFilters {
+    border: none;
+    background-color: #F6AC12;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.counterFilters {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.iconSelections {
+    border: 1.51px solid #E2E1DD;
+    border-radius: 8px 0 0 8px;
+    padding: 10px;
+}
+
+.selectSelections {
+    border-top: 1.51px solid #E2E1DD;
+    border-right: 1.51px solid #E2E1DD;
+    border-bottom: 1.51px solid #E2E1DD;
+    border-radius: 0 8px 8px 0;
+    padding: 14px 10px 14px 8px;
+}
+
+.selectSelections select {
+    border: none;
+    color: #021E2F;
+    font-size: 16px;
+    line-height: 19.2px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(../../assets/arrow-icon-filter.svg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding-right: 20px;
+    cursor: pointer;
+
+}
+
+.selectSelections select:focus {
+    outline: none;
+}
+
+.portfolioFiltersAndSearchBlock {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border: 1px solid #E2E1DD;
+    border-radius: 16px;
+    padding: 25px;
+    gap: 25px;
+}
+
+.plusFilters {
+    border-top: 1px solid #E2E1DD;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.plusFiltersContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 287px;
+}
+
+.plusFiltersContainer p {
+    color: #7A8699;
+    font-size: 16px;
+    line-height: 19.2px;
+}
+
+.plusFiltersSelectBlock {
+    border: 1.51px solid #E2E1DD;
+    color: #021E2F;
+    font-size: 16px;
+    line-height: 19.2px;
+    padding: 12.5px 15px;
+    border-radius: 8px;
+
+}
+
+.plusFiltersSelectBlock select {
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url(../../assets/arrow-icon-filter.svg);
+    background-position: right center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 100%;
+}
+
+.plusFiltersSelectBlock select:focus {
+    outline: none;
+}
+
+.datesPeriodBox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.datesPeriodBox p {
+    color: #7A8699;
+    font-size: 16px;
+    line-height: 19.2px;
+}
+
+.datesContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+}
+
+.dateFromBtn {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.dateFromContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.calendarContainer {
+    padding: 10px;
+    border: 1.51px solid #E2E1DD;
+    border-radius: 8px 0 0 8px;
+}
+
+.DateFromTextContainer {
+    padding: 14px 29px 14px 8px;
+    border-top: 1.51px solid #E2E1DD;
+    border-bottom: 1.51px solid #E2E1DD;
+    border-right: 1.51px solid #E2E1DD;
+    border-radius: 0 8px 8px 0;
+}
+
+.DateToTextContainer {
+    padding: 14px 50px 14px 15px;
+    border: 1.51px solid #E2E1DD;
+    border-radius: 8px;
+}
+
+.tableBaseContainer {
+    height: 100%;
+    max-height: 672px;
+    background-color: #FFFFFF;
+    border: 1px solid #E2E1DD;
+    border-radius: 12px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+    overflow: hidden;
+}

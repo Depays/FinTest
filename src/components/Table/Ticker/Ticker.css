@@ -1,0 +1,56 @@
+.tickerComponentContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.tickerComponentData {
+    display: flex;
+    flex-direction: column;
+    /* gap: 6px; */
+}
+
+.tickerComponentHeader {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+}
+
+.tickerComponentHeaderName {
+    color: #021E2F;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19.2px;
+
+}
+
+.tickerComponentHeaderType {
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 22px;
+    background-color: #F6AC12;
+    border-radius: 50px;
+    padding: 0 5px;
+    display: inline-block;
+}
+
+.tickerComponentHeaderDescName {
+    color: #7A8699;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.tickerComponentCoinData {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 6px;
+}
+
+.tickerComponentCoinData p {
+    color: #021E2F;
+    font-size: 16px;
+    line-height: 22px;
+}
